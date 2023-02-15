@@ -1,0 +1,16 @@
+.maplibre-control-zoomhome {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.maplibre-control-zoomhome a {
+}
+
+.maplibre-control-zoomhome img {
+    height: 40px;
+
+    position: relative;
+    top: -4px;
+    right: 4px;
+}
