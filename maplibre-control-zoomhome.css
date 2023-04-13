@@ -4,13 +4,9 @@
     cursor: pointer;
 }
 
-.maplibre-control-zoomhome a {
-}
-
-.maplibre-control-zoomhome img {
-    height: 40px;
-
-    position: relative;
-    top: -4px;
-    right: 4px;
+.maplibre-control-zoomhome button {
+    background-image: url(./home.svg);
+    background-repeat: no-repeat;
+    background-size: 45px 45px;
+    background-position: -7px -7px;
 }

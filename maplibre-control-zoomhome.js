@@ -16,11 +16,16 @@ class MapLibreControlZoomHome {
         const div = document.createElement('div');
         div.className = 'mapboxgl-ctrl mapboxgl-ctrl-group maplibre-control-zoomhome';
 
-        div.innerHTML = `<button type="button" title="${this.options.tooltipText}" aria-label="${this.options.toltipText}" aria-disabled="false"><img src="home.svg" alt="" /></button>`;
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.title = this.options.tooltipText;
+        button.setAttribute('aria-label', this.options.tooltipText);
 
-        div.addEventListener('click', () => {
+        button.addEventListener('click', () => {
             this.resetMapView();
         });
+
+        div.appendChild(button);
 
         return div;
     }
