@@ -10,3 +10,9 @@
   top: -7px;
   left: -7px;
 }
+
+.maplibre-control-zoomhome button:focus {
+  outline: 2px solid black;
+  border-radius: 3px;
+  box-shadow: none !important;
+}
