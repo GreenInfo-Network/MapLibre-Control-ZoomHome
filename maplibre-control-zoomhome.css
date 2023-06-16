@@ -4,9 +4,15 @@
     cursor: pointer;
 }
 
-.maplibre-control-zoomhome button {
-    background-image: url(./home.svg);
-    background-repeat: no-repeat;
-    background-size: 45px 45px;
-    background-position: -7px -7px;
+.maplibre-control-zoomhome button img {
+  width: 45px;
+  position: relative;
+  top: -7px;
+  left: -7px;
+}
+
+.maplibre-control-zoomhome button:focus {
+  outline: 2px solid black;
+  border-radius: 3px;
+  box-shadow: none !important;
 }

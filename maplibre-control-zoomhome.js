@@ -19,7 +19,12 @@ class MapLibreControlZoomHome {
         const button = document.createElement('button');
         button.type = 'button';
         button.title = this.options.tooltipText;
-        button.setAttribute('aria-label', this.options.tooltipText);
+
+        const icon = document.createElement('img');
+        icon.setAttribute('src', './home.svg');
+        icon.setAttribute('alt', this.options.tooltipText);
+
+        button.appendChild(icon);
 
         button.addEventListener('click', () => {
             this.resetMapView();
